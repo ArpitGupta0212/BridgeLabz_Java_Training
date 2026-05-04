@@ -12,7 +12,7 @@ public class DiscountCalculator {
 
         double finalFee = fee - discount;
 
-        // Output
+     
         System.out.println("The discount amount is INR " + discount);
         System.out.println("The final discounted fee is INR " + finalFee);
     }
