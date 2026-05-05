@@ -14,13 +14,13 @@ public class IntOperation {
         System.out.print("Enter value of c: ");
         int c = sc.nextInt();
 
-        // operations
+  
         int result1 = a + b * c;
         int result2 = a * b + c;
         int result3 = c + a / b;
         int result4 = a % b + c;
 
-        // output
+     
         System.out.println("Results of Int Operations are: " 
                 + result1 + ", " 
                 + result2 + ", " 
