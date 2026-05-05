@@ -1,7 +1,7 @@
 public class NaturalNumberSum {
     public static void main(String[] args) {
 
-        int num = 5;  // You can change this value
+        int num = 5;  
 
         if (num > 0) {
             int sum = num * (num + 1) / 2;
