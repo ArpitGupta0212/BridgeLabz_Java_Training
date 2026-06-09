@@ -4,6 +4,7 @@ class StudentService{
     }
 } 
 class ReportStudent{
+    // Single responsibillity principle
     public void studentReport(){
         System.out.println("Report of Students");
     }
