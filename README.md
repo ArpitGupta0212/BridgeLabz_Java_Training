@@ -143,7 +143,7 @@ This repository contains Java assignments and practice problems completed during
 
 ## LinkedList
 
-* LL
+* Linked_List_Implementation
 
 ## Queue
 
