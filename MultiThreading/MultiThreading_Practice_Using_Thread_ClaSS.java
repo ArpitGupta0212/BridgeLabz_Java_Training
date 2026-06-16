@@ -1,4 +1,4 @@
-public class MultiThreading_Practice_Using_Thread_ClaSS{    
+public class MultiThreading_Practice_Using_Thread_Class{    
     public static void main(String[] args) {
         MyThread t1=new MyThread();
         t1.start();
