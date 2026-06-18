@@ -4,7 +4,7 @@ public class Optional_Practice{
         return Optional.ofNullable("Arpit");
     }
     public static void main(String[] args) {
-        String str=null;
+        String str="Shyam";
         Optional <String> opt=Optional.ofNullable(str);
         System.out.println(opt.isPresent());
         System.out.println(opt.orElse("Nothing in String"));
