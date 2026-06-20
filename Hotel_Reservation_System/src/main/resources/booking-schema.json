@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BookingList",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "reservationId": { "type": "string" },
+      "guestName": { "type": "string", "minLength": 1 },
+      "roomNumber": { "type": "integer", "minimum": 1 },
+      "nights": { "type": "integer", "minimum": 1 },
+      "totalAmount": { "type": "number", "minimum": 0.01 },
+      "status": { "type": "string" }
+    },
+    "required": ["reservationId", "guestName", "roomNumber", "nights", "totalAmount", "status"]
+  }
+}

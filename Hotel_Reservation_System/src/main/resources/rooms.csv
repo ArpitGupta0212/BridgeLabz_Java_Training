@@ -1,0 +1,8 @@
+RoomNumber,Type,PricePerNight,IsAvailable
+101,Single,120.00,true
+102,Double,200.00,true
+103,Suite,450.00,true
+-5,Single,100.00,true
+104,InvalidType,150.00,true
+105,Double,-50.00,true
+106,Single,110.00,true
