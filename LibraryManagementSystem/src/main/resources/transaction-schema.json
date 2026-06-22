@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TransactionList",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "transactionId": { "type": "string" },
+      "patronName": { "type": "string", "minLength": 1 },
+      "bookId": { "type": "integer", "minimum": 1 },
+      "borrowDate": { "type": "string" },
+      "dueDate": { "type": "string" },
+      "status": { "type": "string" },
+      "fine": { "type": "number", "minimum": 0 }
+    },
+    "required": ["transactionId", "patronName", "bookId", "borrowDate", "dueDate", "status", "fine"]
+  }
+}

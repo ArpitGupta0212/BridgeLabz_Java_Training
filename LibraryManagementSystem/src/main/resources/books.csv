@@ -1,0 +1,6 @@
+BookID,Title,Author,Genre,ISBN,Quantity,Price
+1001,The Great Gatsby,F. Scott Fitzgerald,Fiction,9780743273565,5,15.99
+1002,Introduction to Java,John Doe,Education,9780134670942,10,59.99
+1003,Clean Code,Robert C. Martin,Education,9780132350884,3,45.50
+-999,Invalid Book,Empty,None,000,0,-12.00
+1004,Dune,Frank Herbert,Sci-Fi,9780441172719,8,22.00
