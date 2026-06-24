@@ -3,8 +3,8 @@ package com.LibraryManagementSystem.model;
 import java.util.Objects;
 
 public class Book {
-    private int bookId;
 
+    private int bookId;
     private String title;
     private String author;
     private String genre;
@@ -16,6 +16,7 @@ public class Book {
     }
 
     public Book(int bookId, String title, String author, String genre, String isbn, int quantity, double price) {
+
         this.bookId = bookId;
         this.title = title;
         this.author = author;
@@ -23,23 +24,6 @@ public class Book {
         this.isbn = isbn;
         this.quantity = quantity;
         this.price = price;
-    }
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
-
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
     }
 
     public int getBookId() {
@@ -50,6 +34,22 @@ public class Book {
         this.bookId = bookId;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
     public String getGenre() {
         return genre;
     }
@@ -58,12 +58,12 @@ public class Book {
         this.genre = genre;
     }
 
-    public double getPrice() {
-        return price;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     public int getQuantity() {
@@ -74,23 +74,25 @@ public class Book {
         this.quantity = quantity;
     }
 
-    public String getTitle() {
-        return title;
+    public double getPrice() {
+        return price;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     @Override
     public String toString() {
-        return "Book{" + "id=" + bookId + ", title='" + title + '\'' + ", author='" + author + '\'' + ", quantity=" + quantity + '}';
+
+        return "Book{" + "bookId=" + bookId + ", title='" + title + '\'' + ", author='" + author + '\'' + ", genre='" + genre + '\'' + ", isbn='" + isbn + '\'' + ", quantity=" + quantity + ", price=" + price + '}';
     }
 
     @Override
     public boolean equals(Object o) {
 
         if (this == o) return true;
+
         if (!(o instanceof Book book)) return false;
 
         return bookId == book.bookId || isbn.equalsIgnoreCase(book.isbn);

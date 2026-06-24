@@ -12,19 +12,47 @@ public class BookValidator implements Validator<Book> {
 
         List<String> errors = new ArrayList<>();
 
-        if (book.getBookId() <= 0) errors.add("Book ID must be positive");
+        // Book ID Validation
+        if (book.getBookId() <= 0) {
 
-        if (book.getTitle() == null || book.getTitle().isBlank()) errors.add("Title required");
-
-        if (book.getAuthor() == null || book.getAuthor().isBlank()) errors.add("Author required");
-
-        if (!book.getIsbn().matches("[0-9]{10}|[0-9]{13}")) {
-            errors.add("Invalid ISBN");
+            errors.add("Book ID must be positive");
         }
 
-        if (book.getQuantity() < 0) errors.add("Quantity invalid");
+        // Title Validation
+        if (book.getTitle() == null || book.getTitle().isBlank()) {
 
-        if (book.getPrice() <= 0) errors.add("Price invalid");
+            errors.add("Title cannot be empty");
+        }
+
+        // Author Validation
+        if (book.getAuthor() == null || book.getAuthor().isBlank()) {
+
+            errors.add("Author cannot be empty");
+        }
+
+        // Genre Validation
+        if (book.getGenre() == null || book.getGenre().isBlank()) {
+
+            errors.add("Genre cannot be empty");
+        }
+
+        // ISBN Validation
+        if (book.getIsbn() == null || !book.getIsbn().matches("[0-9]{10}|[0-9]{13}")) {
+
+            errors.add("ISBN must contain 10 or 13 digits");
+        }
+
+        // Quantity Validation
+        if (book.getQuantity() < 0) {
+
+            errors.add("Quantity cannot be negative");
+        }
+
+        // Price Validation
+        if (book.getPrice() <= 0) {
+
+            errors.add("Price must be greater than zero");
+        }
 
         return errors;
     }

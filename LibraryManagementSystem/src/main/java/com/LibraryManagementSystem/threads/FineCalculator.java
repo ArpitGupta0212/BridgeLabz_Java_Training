@@ -18,18 +18,32 @@ public class FineCalculator extends Thread {
 
         try {
 
+            // TIMED_WAITING State
             Thread.sleep(150);
 
             synchronized (lock) {
 
+                // WAITING State
                 lock.wait();
 
-                transaction.setFine(5);
+                // Fine Calculation
+                transaction.setFine(5.0);
 
+                // Status Update
                 transaction.setStatus("Overdue");
+
+                System.out.println("Fine Calculated for : " + transaction.getTransactionId());
+
+                System.out.println("Fine Amount : " + transaction.getFine());
+
+                System.out.println("Status : " + transaction.getStatus());
             }
 
-        } catch (Exception e) {
+        } catch (InterruptedException e) {
+
+            System.out.println("Thread Interrupted");
+
+            e.printStackTrace();
         }
     }
 }
