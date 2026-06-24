@@ -260,6 +260,156 @@ This repository contains Java assignments and practice problems completed during
 
 ---
 
+# IO Program & MultiThreading
+
+## Hotel Reservation System
+
+### IO Layer
+- CsvHandler
+- FileOperations
+- JsonHandler
+
+### Model
+- Reservation
+- Room
+
+### Service
+- ReservationService
+
+### Threads
+- NotificationDispatcher
+- PaymentProcessor
+- ThreadStateTracker
+- VirtualThreadSimulator
+
+### Validation
+- RoomValidator
+- Validator
+
+### Main Files
+- App
+- Main
+
+### Resources
+- booking-schema.json
+- bookings.json
+- rooms.csv
+
+---
+
+## IO Programming
+
+### CSV Handling
+- Csv_reader
+- Csv_writer
+- App
+
+### Resources
+- Student.csv
+
+---
+
+### JSON Handling
+- Address
+- App
+- Json_Practice
+- Student
+
+---
+
+## Java 8 Features
+
+### Lambda Expression
+- Lambda_Practice
+
+### Optional Class
+- Optional_Practice
+
+### Stream API
+- StreamApi_Methods
+- StreamApi_Practice
+- StreamObject
+
+---
+
+## Library Management System
+
+### IO Layer
+- CsvHandler
+- FileOperations
+- JsonHandler
+
+### Model
+- Book
+- Transaction
+- User
+
+### Service
+- LibraryService
+
+### Threads
+- ConcurrentBorrowSimulator
+- FineCalculator
+- NotificationSender
+- ThreadStateTracker
+
+### UI
+- MenuDriver
+
+### Validation
+- BookValidator
+- Validator
+
+### Main Files
+- App
+- Main
+
+### Resources
+- books.csv
+- transaction-schema.json
+- transactions.json
+
+---
+
+## MultiThreading
+
+### Basic Programs
+- BackgroundCleanupService
+- BankTransactionSystem
+- FlightBookingSystem
+- MultiThreading_Even_Odd
+- MultiThreading_Life_Cycle
+- MultiThreading_Practice_Using_Interface
+- MultiThreading_Practice_Using_Thread_Class
+- ParallelNumberPrinter
+- ProducerConsumerFoodDelivery
+- SmartNumberPrinter
+- TicketBookingSystem
+- TrafficSignalSimulator
+- VirtualThread
+
+---
+
+## MultiThreading Implementation
+
+### Lifecycle
+- ThreadStateDemo
+
+### Producer Consumer
+- Buffer
+- Consumer
+- Producer
+- ProducerConsumerDemo
+
+### Singleton Concurrency
+- SafeSingleton
+- SingletonConcurrencyDemo
+- UnsafeSingleton
+
+### Main Files
+- App
+- Main
+
 # Author
 
 Arpit Gupta
